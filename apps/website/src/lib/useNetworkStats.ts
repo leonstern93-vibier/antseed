@@ -64,14 +64,15 @@ export interface NetworkStats {
   live: boolean;
 }
 
-/** Last known-good values — what SSR ships and what any failure shows. */
+/** Last known-good values (Antscan, 2026-10-13) — what SSR ships and what
+    any failure shows. Refresh them when the live numbers drift far ahead. */
 const FALLBACK: NetworkStats = {
-  tokens: '82B+',
-  revenue: '$143K+',
-  revenueShort: '$143K',
-  providers: '158+',
-  providersCount: '162',
-  settlementsPerEpoch: '18,440',
+  tokens: '193B+',
+  revenue: '$312K+',
+  revenueShort: '$312K',
+  providers: '239+',
+  providersCount: '239',
+  settlementsPerEpoch: '23,867',
   live: false,
 };
 
